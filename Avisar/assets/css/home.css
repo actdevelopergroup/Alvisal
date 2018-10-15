@@ -1,0 +1,203 @@
+@font-face{
+    src: url('../fonts/BerkshireSwash-Regular.ttf');
+    font-family: avisar;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background: #fffbfb; 
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+a{text-decoration: none;}
+ul{list-style-type: none;}
+.variable{
+    display: block;
+    max-width:1500px;
+}
+header{
+    height:100px;
+    width: 100%;
+    background: #008080;
+    color: #f4f4f4;
+    box-shadow:rgba(226, 220, 220, 0.5);
+}
+#brand{
+    width: 100%;
+    padding: 15px 20px 0;
+}
+#brand .user-id{
+    float: left;
+    width:65px;
+    margin-right: 1%;
+    position: relative;
+}
+.user-id h1{
+    border-radius: 50%;
+    background: #f4f4f4;
+    color: #6632cc;
+    padding: 20px 0;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+}
+.user-id .user-options{
+    position: absolute;
+    top: 25px;
+    left: 80px;
+}
+.user-id .user-options .fa{
+    font-size: 18px;
+    color: #e2dcdc;
+}
+.user-options ul{
+    display: block;
+    width:190px;
+    background: #333;
+    border-radius: 2%;
+    padding: 15px;
+}
+
+.user-options ul li{
+    padding: 7px;
+}
+.user-options ul li a{
+    color: #e2dcdc;
+    letter-spacing: 1px;
+}
+.user-options ul li:hover {
+    background: #076363;
+}
+.user-options ul li .fa{ 
+    margin-right: 10px;
+}
+#show-btn:hover .fa{
+    color: #333;
+}
+
+.site-logo{
+    text-align: center;
+    font-size: 35px;
+    font-family: avisar;
+}
+nav{
+    position: relative;
+    top: -10px;
+    width: 70%;
+    margin: 1% auto;
+    overflow: hidden;
+}
+nav ul{
+    list-style: none;
+    overflow: hidden;
+    margin: 8px 0;
+}
+header nav ul li{
+    display: inline-block;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+nav ul li a .fa{
+    font-size: 30px;
+}
+nav ul li a i:hover{
+    color: #333;
+}
+header nav ul li a{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    color:#f4f4f4;
+}
+
+/* Body Styling */
+main{
+    width: 96%;
+    padding: 1.25em;
+    margin: 1% auto;
+}
+#main-side{
+    float: left;
+    width: 64%;
+    padding: 2%;
+    margin: 1% 0;
+    border-radius: 2%;
+    height: 700px;
+    background: #e2dcdc;
+}
+#side-nav{
+    float: right;
+    width: 32%;
+    padding: 2%;
+    margin: 1% 0;
+    border-radius: 2%;
+    height: 700px;
+    background: #e2dcdc;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 48em){
+    #brand .user-id{
+    }
+    .user-id h1{
+        padding: 0.52em 0;
+        font-size: 2.1em;
+    }
+ 
+    .user-id .user-options ul{
+        position: absolute;
+        top: 68px;
+        right: -130px;
+    } 
+    .user-id .user-options .fa{
+        font-size: 18px;
+        color: #e2dcdc;
+    }
+    .user-options ul{
+        display: block;
+        width:220px;
+        padding: 20px;
+    }
+    
+    .user-options ul li{
+        padding: 10px;
+    }
+
+    nav{
+        top: -10px;
+        right: 45px;
+        margin: 1.0em auto;
+    }
+
+    nav ul li a .fa{
+        font-size: 1.5em;
+    }
+   
+    header nav ul li a{
+        padding-left: 2em;
+    }
+    
+    /* Body Styling */
+    main{
+        width: 96%;
+        padding: 1.25em;
+        margin: 1% auto;
+    }
+    #main-side{
+       float: none;
+       width: 100%;
+       margin-bottom: 1.5em;
+    }
+    #side-nav{
+        float: none;
+        width: 100%;
+    }
+    
+}
